@@ -7,7 +7,7 @@ SOLUTIONS = Path("solutions")
 def count_files(path):
     if not path.exists():
         return 0
-    return sum(1 for f in path.iterdir() if f.is_file())
+    return sum(1 for f in path.iterdir() if f.is_file() and f.name != ".gitkeep")
 
 easy_count = count_files(SOLUTIONS / "easy")
 medium_count = count_files(SOLUTIONS / "medium")
