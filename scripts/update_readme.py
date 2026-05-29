@@ -4,9 +4,14 @@ import re
 README = Path("README.md")
 SOLUTIONS = Path("solutions")
 
-easy_count = sum(1 for f in (SOLUTIONS / "easy").iterdir() if f.is_file())
-medium_count = sum(1 for f in (SOLUTIONS / "medium").iterdir() if f.is_file())
-hard_count = sum(1 for f in (SOLUTIONS / "hard").iterdir() if f.is_file())
+def count_files(path):
+    if not path.exists():
+        return 0
+    return sum(1 for f in path.iterdir() if f.is_file())
+
+easy_count = count_files(SOLUTIONS / "easy")
+medium_count = count_files(SOLUTIONS / "medium")
+hard_count = count_files(SOLUTIONS / "hard")
 
 total_count = easy_count + medium_count + hard_count
 
