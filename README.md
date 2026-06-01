@@ -7,5 +7,5 @@ A repository for my solutions to leetcode problems.
 |------------|-------|
 | Easy | <!-- EASY_COUNT -->19<!-- /EASY_COUNT --> |
 | Medium | <!-- MEDIUM_COUNT -->2<!-- /MEDIUM_COUNT --> |
-| Hard | <!-- HARD_COUNT -->0<!-- /HARD_COUNT --> |
-| **Total** | <!-- TOTAL_COUNT -->21<!-- /TOTAL_COUNT --> |
+| Hard | <!-- HARD_COUNT -->1<!-- /HARD_COUNT --> |
+| **Total** | <!-- TOTAL_COUNT -->22<!-- /TOTAL_COUNT --> |
